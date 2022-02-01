@@ -1,4 +1,4 @@
-
+/* ----------- header -----------*/
 #header-ul {
     display: flex;
     justify-content: flex-end;
@@ -14,6 +14,9 @@
 .header-li {
     margin: 0 32px;
 }
+/* ----------- / header -----------*/
+
+/* ----------- top -----------*/
 
 #header-space {
     height: 102px;
@@ -63,6 +66,9 @@
     transform: translateY(-10px);
 }
 
+/* ----------- / top -----------*/
+
+/* ----------- outline -----------*/
 #outline-name {
     font-size: 20px;
     font-weight: 500;
@@ -76,7 +82,9 @@
     margin-block-end: 0;
     padding: 0;
 }
+/* ----------- / outline -----------*/
 
+/* ----------- greeting -----------*/
 #greeting-img-div {
     text-align: right;
 }
@@ -86,7 +94,9 @@
     height: 120px;
     
 }
+/* ----------- / greeting -----------*/
 
+/* ----------- contents -----------*/
 #research-link-div {
     text-align: center;
 }
@@ -102,7 +112,9 @@
     margin-top: 40px;
     border-radius: 39px;
 }
+/* ----------- / contents -----------*/
 
+/* ----------- event -----------*/
 #event-ul {
     list-style-type: none;
     margin-block-start: 0;
@@ -110,6 +122,41 @@
     padding: 0;
 }
 
+#lecturer-profile-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    align-content: flex-start;
+}
+
+.lecturer-profile-wrapper {
+    width: 348px;
+    height: 348px;
+    padding: 12px;
+    margin-bottom: 40px;
+    border: 4px #F19185 solid;
+    background-color: #fff;
+    display: grid
+}
+
+.lecturer-profile-img {
+    width: 120px;
+    height: 120px;
+    float: right
+}
+
+.lecturer-profile-text{
+    font-size: 12px;
+}
+
+.lecturer-profile-name {
+    font-size: 20px;
+    font-weight: 700;
+}
+/* ----------- / event -----------*/
+
+/* ----------- footer -----------*/
 #footer-contact-div {
     padding-top: 48px;
 }
@@ -129,6 +176,8 @@
     margin: 16px;
     border-radius: 39px;
 }
+/* ----------- / footer -----------*/
+
 /* ----------- loading-animation -----------*/
 #loading {
     z-index: 200;
@@ -202,4 +251,4 @@
     }
 }
 
-/* ----------- /loading-animation -----------*/
+/* ----------- / loading-animation -----------*/
