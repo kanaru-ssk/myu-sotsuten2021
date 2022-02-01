@@ -1,3 +1,8 @@
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 118px;
+}
+
 body {
     margin: 0;
     background-color: #E8F5F9;
