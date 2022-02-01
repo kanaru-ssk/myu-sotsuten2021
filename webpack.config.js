@@ -15,7 +15,7 @@ module.exports = {
     output: {
         // 出力ファイル名
         filename: 'js/main.js',
-        path: path.resolve(__dirname, 'build'),
+        path: path.resolve(__dirname, 'docs'),
     },
     plugins: [
         new MiniCssExtractPlugin({
@@ -25,7 +25,7 @@ module.exports = {
             patterns: [{
                 context: "src",
                 from: "**/*",
-                to: path.resolve(__dirname, "build")
+                to: path.resolve(__dirname, "docs")
             },],
         }),
         new ImageminPlugin({
@@ -66,7 +66,7 @@ module.exports = {
         hot: true,
         open: false,
         historyApiFallback: true,
-        static: 'build',
+        static: 'docs',
     },
     cache: {
         type: 'filesystem'

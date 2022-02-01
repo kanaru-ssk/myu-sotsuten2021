@@ -1,0 +1,1 @@
+(()=>{fetch("./json/exhibitor.json").then((e=>e.json())).then((n=>e(n)));const e=e=>{e.forEach((e=>{document.getElementById(e.labo+"-labo").appendChild(n(e.name))}))},n=e=>{const n=document.createTextNode(e),t=document.createElement("span");return t.appendChild(n),t}})();

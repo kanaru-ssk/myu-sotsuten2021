@@ -1,1 +1,0 @@
-(()=>{fetch("/json/exhibitor.json").then((e=>e.json())).then((n=>e(n)));const e=e=>{const n=document.getElementById("kano-labo"),o=document.getElementById("suzuki-labo");e.forEach((e=>{if("kano"===e.labo){const o=document.createTextNode(e.name);n.appendChild(o)}else if("suzuki"===e.labo){const n=document.createTextNode(e.name);o.appendChild(n)}}))}})();
