@@ -69,6 +69,49 @@
 
 /* ----------- / top -----------*/
 
+/* ----------- modal -----------*/
+#modal {
+    display: none;
+    position: fixed;
+    z-index: 3;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0,0,0,0.5);
+}
+
+#modal-window {
+    max-width: 800px;
+    height: calc(100vh - 224px);
+    background-color: #fff;
+    margin: 80px auto;
+    padding: 32px 64px;
+}
+
+#modal-contents {
+    overflow: auto;
+    height: calc(100% - 64px);
+}
+
+#modal-close-div {
+    height: 64px;
+    text-align: center;
+
+}
+
+#modal-close-button {
+    width: 128px;
+    height: 32px;
+    margin-top: 32px;
+    padding: 0;
+    background: none;
+    color: #185466;
+    border-color: #185466;
+    cursor: pointer;
+}
+/* ----------- / modal -----------*/
+
 /* ----------- outline -----------*/
 #outline-name {
     font-size: 20px;
