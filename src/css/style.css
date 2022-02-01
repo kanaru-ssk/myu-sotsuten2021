@@ -48,6 +48,7 @@
     background-clip: content-box;
     background-color: #fff;
     overflow:hidden;
+    cursor: pointer;
 }
 
 #top-info-text-div {
@@ -172,7 +173,7 @@
     font-weight: 400;
     text-decoration: none;
     background-color: #fff;
-    padding: 20px;
+    padding: 12px;
     margin: 16px;
     border-radius: 39px;
 }
