@@ -19,7 +19,7 @@
 /* ----------- top -----------*/
 
 #header-space {
-    height: 102px;
+    height: 80px;
 }
 
 #top-img {
@@ -41,7 +41,7 @@
 
 #top-info-inner-div {
     width: 100%;
-    height: 64px;
+    height: 42px;
     margin: 76px auto;
     padding: 0 80px;
     max-width: 800px;
@@ -53,10 +53,10 @@
 
 #top-info-text-div {
     width: 390px;
-    height: 24px;
-    line-height: 24px;
+    height: 16px;
+    line-height: 16px;
     text-align: center;
-    margin: 20px auto;
+    margin: 13px auto;
     border-bottom: #185466 1px solid;
 }
 
@@ -129,7 +129,7 @@
 /* ----------- / outline -----------*/
 
 /* ----------- greeting -----------*/
-#greeting-img-div {
+#greeting-teacher-div {
     text-align: right;
 }
 
@@ -137,6 +137,21 @@
     width: 120px;
     height: 120px;
     
+}
+
+#greeting-teacher-name {
+    height: 120px;
+    float: right;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    padding-left: 16px;
+}
+
+.other-span {
+    margin: 0;
 }
 /* ----------- / greeting -----------*/
 
@@ -296,3 +311,11 @@
 }
 
 /* ----------- / loading-animation -----------*/
+
+
+/* 480px以下に適用されるCSS（スマホ用） */
+/* @media screen and (max-width: 480px) {
+	#header-ul {
+        display: none;
+    }
+} */
