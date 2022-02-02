@@ -11,8 +11,8 @@
     height: 100%;
 }
 
-.header-li {
-    margin: 0 32px;
+.header-nav-img {
+    padding: 32px;
 }
 
 #menu-button-check {
@@ -249,10 +249,11 @@
     display: inline-block;
     color: #0098C6;
     font-size: 16px;
+    line-height: 48px;
     font-weight: 400;
     text-decoration: none;
     background-color: #fff;
-    padding: 12px;
+    padding: 0 20px;
     margin: 16px;
     border-radius: 39px;
 }
