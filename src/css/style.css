@@ -15,6 +15,10 @@
     margin: 0 32px;
 }
 
+#menu-button-check {
+    display: none
+}
+
 #menu-button {
     display: none;
 }
@@ -48,6 +52,7 @@
     height: 216px;
     background: linear-gradient(#0098C6, #E8F5F9);
     overflow:hidden;
+    transform: translateY(-1px);
 }
 
 #top-info-inner-div {
@@ -195,6 +200,7 @@
 
 #lecturer-profile-container {
     display: flex;
+    gap: 40px;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: flex-start;
@@ -205,7 +211,6 @@
     width: 348px;
     min-height: 348px;
     padding: 12px;
-    margin-bottom: 40px;
     border: 4px #F19185 solid;
     background-color: #fff;
     display: grid
@@ -329,8 +334,8 @@
 /* ----------- / loading-animation -----------*/
 
 
-/* 480px以下に適用されるCSS（スマホ用） */
-@media screen and (max-width: 480px) {
+/* 750px以下に適用されるCSS（スマホ用） */
+@media screen and (max-width: 750px) {
     #header-ul {
         display: none;
     }

@@ -60,8 +60,8 @@ footer {
     z-index: 1;
 }
 
-/* 480px以下に適用されるCSS（スマホ用） */
-@media screen and (max-width: 480px) {
+/* 750px以下に適用されるCSS（スマホ用） */
+@media screen and (max-width: 750px) {
 
     header {
         height: 52px;
