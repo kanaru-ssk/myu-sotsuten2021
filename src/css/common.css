@@ -11,7 +11,7 @@ body {
     font-weight: 300;
     line-height: 1.4;
     letter-spacing: 1.4;
-    color: #185466
+    color: #185466;
 }
 
 header {
@@ -29,7 +29,6 @@ main {
     margin: 0 auto;
     padding: 0 80px;
     max-width: 800px;
-    overflow: hidden;
 }
 
 section {
@@ -61,59 +60,14 @@ footer {
     z-index: 1;
 }
 
-/* header {
-    position: fixed;
-    
-    width: 100vw;
-    height: 102px;
-    
-    background-color: #5EB9D7;
+/* 480px以下に適用されるCSS（スマホ用） */
+@media screen and (max-width: 480px) {
 
-    z-index: 100;
+    header {
+        height: 52px;
+    }
+
+    main {
+        padding: 0 16px;
+    }
 }
-
-main {
-    margin: 5vw;
-    padding: 5vw;
-
-    font-family: "Noto Sans", sans-serif;
-    line-height: 30px;
-
-    background-color: rgba(255, 255, 255, 0.5);
-}
-
-footer {
-    background-color: white;
-    height: 300px;
-    padding: 30px;
-}
-
-section {
-    margin-bottom: 3vw;
-}
-
-h1 {
-    font-size: 28px;
-    margin-bottom: 1vh;
-}
-
-h2 {
-    font-size: 20px;
-    margin-bottom: 1vh;
-}
-
-h3 {
-    font-size: 18px;
-    font-weight: bold;
-    margin-bottom: 1vh;
-}
-
-h4 {
-    font-size: 16px;
-    margin-bottom: 1vh;
-}
-
-h5 {
-    font-size: 14px;
-    line-height: 30px;
-} */

@@ -42,13 +42,16 @@
                     <a href="#access"><img src="./img/access.svg"/></a>
                 </li>
             </ul>
-            
+            <img id="menu-button" src="./img/menu-button.svg" alt="">
         </header>
         <!----- /header ----->
 
         <div id="header-space"></div>
-        <img id="top-img" src="./img/background.png">
-        <img id="title-img" src="./img/title.svg" alt="title">
+        <div id="top-img">
+            <img id="title-img" src="./img/title.svg" alt="title">
+            <img id="title-img-sp" src="./img/title-sp.svg" alt="title">
+        </div>
+        
 
         <div id="top-info-outer-div">
             <div id="top-info-inner-div">
@@ -131,12 +134,11 @@
                 </p>
                 
                 <div id="greeting-teacher-div">
-                    <img src="img/greeting_teacher-img.png" id="greeting-img">
                     <div id="greeting-teacher-name">
                         <span class="other-span">価値創造デザイン学類長</span>
                         <span class="other-span">土岐謙次 教授</span>
                     </div>
-                    
+                    <img src="img/greeting_teacher-img.png" id="greeting-img">
                 </div>
                 
                 
@@ -287,16 +289,12 @@
             <section id="access">
                 <img src="./img/access-red.svg" />
                 <div class="section-title-ja">アクセス</div>
-                <div class="access_content">
-                    <p>宮城大学 大和キャンパス</p>
-                    <p>
-                    〒981-3298 宮城県黒川郡大和町学苑1番地1
-                    </p>
-                    <div class="access_map">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3128.981830604022!2d140.83872361514474!3d38.349402579658985!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5f8981bbb6048c0b%3A0x381e04faa6d0b3e!2z5a6u5Z-O5aSn5a2mIOWkp-WSjOOCreODo-ODs-ODkeOCuQ!5e0!3m2!1sja!2sjp!4v1610949813968!5m2!1sja!2sjp" width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-                    </div>
+                <p>宮城大学 大和キャンパス</p>
+                <p>〒981-3298 宮城県黒川郡大和町学苑1番地1</p>
+                <div id="map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3128.981830604022!2d140.83872361514474!3d38.349402579658985!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5f8981bbb6048c0b%3A0x381e04faa6d0b3e!2z5a6u5Z-O5aSn5a2mIOWkp-WSjOOCreODo-ODs-ODkeOCuQ!5e0!3m2!1sja!2sjp!4v1610949813968!5m2!1sja!2sjp" width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
                 </div>
-              </section>
+            </section>
             <!----- /access ----->
         </main>
         <!----- /main ----->
@@ -304,9 +302,9 @@
         <!----- footer ----->
         <footer>
             <div id="footer-contact-div">
-                <span>卒業研究・制作展事務局</span><br>
-                <span>myu_sotsuten@myu.ac.jp</span><br>
-                <span>022-377-8332</span>
+                <span class="other-span">卒業研究・制作展事務局</span><br>
+                <span class="other-span">myu_sotsuten@myu.ac.jp</span><br>
+                <span class="other-span">022-377-8332</span>
             </div>
             
             <div class="footer_center">

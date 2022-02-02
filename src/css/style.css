@@ -14,6 +14,10 @@
 .header-li {
     margin: 0 32px;
 }
+
+#menu-button {
+    display: none;
+}
 /* ----------- / header -----------*/
 
 /* ----------- top -----------*/
@@ -24,12 +28,19 @@
 
 #top-img {
     width: 100%;
+    height: calc(100vh - 80px);
+    background-image: url('../img/background.png');
+    background-size: cover;
 }
 
 #title-img {
     position: absolute;
     top: 160px;
     right: 32px;
+}
+
+#title-img-sp {
+    display: none;
 }
 
 #top-info-outer-div {
@@ -40,7 +51,6 @@
 }
 
 #top-info-inner-div {
-    width: 100%;
     height: 42px;
     margin: 76px auto;
     padding: 0 80px;
@@ -52,7 +62,7 @@
 }
 
 #top-info-text-div {
-    width: 390px;
+    max-width: 360px;
     height: 16px;
     line-height: 16px;
     text-align: center;
@@ -79,6 +89,8 @@
     width: 100vw;
     height: 100vh;
     background-color: rgba(0,0,0,0.5);
+    padding: 80px;
+    box-sizing: border-box;
 }
 
 #modal-window {
@@ -130,24 +142,23 @@
 
 /* ----------- greeting -----------*/
 #greeting-teacher-div {
-    text-align: right;
+    display: flex;
+    justify-content: flex-end;
 }
 
 #greeting-img {
     width: 120px;
     height: 120px;
-    
 }
 
 #greeting-teacher-name {
     height: 120px;
-    float: right;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     align-content: center;
-    padding-left: 16px;
+    padding-right: 16px;
 }
 
 .other-span {
@@ -165,9 +176,10 @@
     color: #fff;
     font-size: 20px;
     font-weight: 600;
+    line-height: 58px;
     text-decoration: none;
     background-color: #0098C6;
-    padding: 20px;
+    padding: 0 20px;
     margin-top: 40px;
     border-radius: 39px;
 }
@@ -191,7 +203,7 @@
 
 .lecturer-profile-wrapper {
     width: 348px;
-    height: 348px;
+    min-height: 348px;
     padding: 12px;
     margin-bottom: 40px;
     border: 4px #F19185 solid;
@@ -214,6 +226,10 @@
     font-weight: 700;
 }
 /* ----------- / event -----------*/
+
+#map {
+    height: 80vh;
+}
 
 /* ----------- footer -----------*/
 #footer-contact-div {
@@ -314,8 +330,56 @@
 
 
 /* 480px以下に適用されるCSS（スマホ用） */
-/* @media screen and (max-width: 480px) {
-	#header-ul {
+@media screen and (max-width: 480px) {
+    #header-ul {
         display: none;
     }
-} */
+
+    #menu-button {
+        display: block;
+        padding: 14px;
+        float: right;
+    }
+
+    #header-space {
+        height: 52px;
+    }
+
+    #title-img {
+        display: none;
+        
+    }
+
+    #title-img-sp {
+        display: block;
+        position: absolute;
+        top: 160px;
+        right: 32px;
+    }
+
+    #top-info-inner-div {
+        padding: 0 16px;
+    }
+    
+    #top-info-text-div {
+        max-width: 320px;
+    }
+
+    #modal {
+        padding: 16px;
+    }
+    
+    #modal-window {
+        padding: 32px 16px;
+    }
+
+    #research-link {
+        font-size: 16px;
+        line-height: 36px;
+    }
+
+    #lecturer-profile-container {
+        justify-content: space-around;
+    }
+
+}
