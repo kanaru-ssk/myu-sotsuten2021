@@ -109,6 +109,7 @@
 #modal-contents {
     overflow: auto;
     height: calc(100% - 64px);
+    overscroll-behavior: contain;
 }
 
 #modal-close-div {
