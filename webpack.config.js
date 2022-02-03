@@ -2,6 +2,7 @@
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const CssMinimizerPlugin = require('css-minimizer-webpack-plugin');
 const HtmlMinimizerPlugin = require("html-minimizer-webpack-plugin");
+const JsonMinimizerPlugin = require("json-minimizer-webpack-plugin");
 const TerserPlugin = require("terser-webpack-plugin");
 const CopyPlugin = require("copy-webpack-plugin");
 const ImageminPlugin = require('imagemin-webpack-plugin').default;
@@ -59,7 +60,8 @@ module.exports = {
         minimizer: [
             new HtmlMinimizerPlugin(),
             new TerserPlugin(),
-            new CssMinimizerPlugin()
+            new CssMinimizerPlugin(),
+            new JsonMinimizerPlugin(),
         ],
     },
     devServer: {
