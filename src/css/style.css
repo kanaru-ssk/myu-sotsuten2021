@@ -3,10 +3,6 @@
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    list-style-type: none;
-    margin-block-start: 0;
-    margin-block-end: 0;
-    padding: 0;
     width: 100%;
     height: 100%;
 }
@@ -137,13 +133,6 @@
     line-height: 1.6;
     margin-bottom: 24px;
 }
-
-#outline-ul {
-    list-style-type: none;
-    margin-block-start: 0;
-    margin-block-end: 0;
-    padding: 0;
-}
 /* ----------- / outline -----------*/
 
 /* ----------- greeting -----------*/
@@ -192,14 +181,7 @@
 /* ----------- / contents -----------*/
 
 /* ----------- event -----------*/
-#event-ul {
-    list-style-type: none;
-    margin-block-start: 0;
-    margin-block-end: 0;
-    padding: 0;
-}
-
-#lecturer-profile-container {
+#lecturer-profile-ul {
     display: flex;
     gap: 40px;
     flex-wrap: wrap;
@@ -208,7 +190,7 @@
     align-content: flex-start;
 }
 
-.lecturer-profile-wrapper {
+.lecturer-profile-li {
     width: 348px;
     min-height: 348px;
     padding: 12px;
@@ -225,6 +207,7 @@
 
 .lecturer-profile-text{
     font-size: 12px;
+    display: block;
 }
 
 .lecturer-profile-name {
@@ -233,9 +216,11 @@
 }
 /* ----------- / event -----------*/
 
+/* ----------- access -----------*/
 #map {
     height: 80vh;
 }
+/* ----------- / access -----------*/
 
 /* ----------- footer -----------*/
 #footer-contact-div {
@@ -385,7 +370,7 @@
         line-height: 36px;
     }
 
-    #lecturer-profile-container {
+    #lecturer-profile-ul {
         justify-content: space-around;
     }
 
