@@ -275,7 +275,6 @@
         background-color: rgba(255, 255, 255, 1);
         backdrop-filter: blur(10px);
     }
-  
     100% {
         background-color: rgba(255, 255, 255, 0);
         backdrop-filter: blur(0px);
@@ -294,6 +293,7 @@
     opacity: 0;
     animation: fadeOut 6s ease 0s;
 }
+
 @keyframes fadeOut{
     0% {
         opacity: 1;
@@ -326,6 +326,63 @@
     }
     100% {
         opacity: 0;
+    }
+}
+
+#man-foot-1 {
+    transform-origin: 40% 40%;
+    animation: walkAnim-1 2s linear infinite 0s;
+}
+
+@keyframes walkAnim-1{
+    0% {
+        transform: rotate(-15deg);
+    }
+    50% {
+        transform: rotate(18deg);
+    }
+    100% {
+        transform: rotate(-15deg);
+    }
+}
+
+#man-foot-2 {
+    transform-origin: 40% 40%;
+    animation: walkAnim-2 2s linear infinite 0s;
+}
+
+@keyframes walkAnim-2{
+    0% {
+        transform: rotate(18deg);
+    }
+    50% {
+        transform: rotate(-15deg);
+    }
+    100% {
+        transform: rotate(18deg);
+    }
+}
+
+#man-body {
+    transform-origin: 0% 100%;
+    animation: walkAnim-body 2s linear infinite 0s;
+}
+
+@keyframes walkAnim-body{
+    0% {
+        transform: scaleY(1);
+    }
+    25% {
+        transform: scaleY(1.05);
+    }
+    50% {
+        transform: scaleY(1);
+    }
+    75% {
+        transform: scaleY(1.05);
+    }
+    100% {
+        transform: scaleY(1);
     }
 }
 
