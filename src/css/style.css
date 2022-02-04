@@ -1,3 +1,14 @@
+/* 
+    z-index
+    -1 : 
+     1 : footer
+     2 : header
+     3 : modal
+     4 : 
+     5 : loading-animation
+
+*/
+
 /* ----------- header -----------*/
 #header-ul {
     display: flex;
@@ -11,7 +22,7 @@
     padding: 32px;
 }
 
-#menu-button-check {
+#menu-check {
     display: none
 }
 
@@ -247,7 +258,7 @@
 
 /* ----------- loading-animation -----------*/
 #loading {
-    z-index: 200;
+    z-index: 5;
     position: fixed;
     top: 0;
     display: flex;
@@ -324,22 +335,47 @@
 /* 750px以下に適用されるCSS（スマホ用） */
 @media screen and (max-width: 750px) {
     #header-ul {
-        display: none;
+        position: fixed;
+        top: 0;
+        justify-content: flex-start;
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+        padding: 16px;
+        background-color: rgba(0, 152, 198, 0.4);
+        backdrop-filter: blur(10px);
+        opacity: 0;
+        transform: translateY(-100%);
+        transition: all 0.5s ease;
+    }
+
+    .header-nav-img {
+        padding: 12px;
+    }
+
+    #menu-check:checked+#header-ul {
+        opacity: 1;
+        transform: translateY(0);
     }
 
     #menu-button {
         display: block;
         padding: 14px;
         float: right;
+        z-index: 4;
     }
 
     #header-space {
         height: 52px;
     }
 
+    #top-img {
+        height: calc(100vh - 52px);
+        background-position: left 30% bottom 0;
+    }
+
     #title-img {
         display: none;
-        
     }
 
     #title-img-sp {

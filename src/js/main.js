@@ -10,23 +10,39 @@ fetch('./json/lecturer.json')
 .then(data => insertLecturer(data));
 
 window.onload = () => {
+    
     let isModalShow = false;
     const modal = document.getElementById('modal');
+    const menu = document.getElementById('header-ul');
+    const menuCheck = document.getElementById('menu-check');
+    
+    // モーダルウィンドウの表示
     document.getElementById('top-info-inner-div').onclick = () => {
         modal.style.display = 'block';
         isModalShow = true;
     }
+    // モーダルウィンドウの非表示
     document.getElementById('modal-close-button').onclick = () => {
         modal.style.display = 'none';
         isModalShow = false;
     }
-
+    
     document.addEventListener('click', (e) => {
-        if (e.target == modal && isModalShow) {
+        // モーダルウィンドウの非表示
+        if (e.target === modal && isModalShow) {
             modal.style.display = 'none';
             isModalShow = false;
         }
+
+        // ハンバーガーメニュー非表示
+        if (e.target !== menu && e.target !== menuCheck) {
+            menuCheck.checked = false;
+        }
     });
+
+    
+    
+
 }
 
 const insertExhibitor = (exhibitors) => {
