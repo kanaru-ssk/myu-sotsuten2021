@@ -289,7 +289,6 @@
 }
 
 #load-svg {
-    height: 50%;
     opacity: 0;
     animation: fadeOut 6s ease 0s;
 }
