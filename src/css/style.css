@@ -37,11 +37,11 @@
     height: 80px;
 }
 
-#top-img {
+#top-background-img {
     width: 100%;
     height: calc(100vh - 80px);
-    background-image: url('../img/background.png');
-    background-size: cover;
+    object-fit: cover;
+    object-position: 0 0;
 }
 
 #title-img {
@@ -399,26 +399,16 @@
 /* 750px以下に適用されるCSS（スマホ用） */
 @media screen and (max-width: 750px) {
     #header-ul {
-        position: fixed;
-        top: 0;
-        justify-content: flex-start;
         flex-direction: column;
-        width: 100%;
         height: auto;
-        padding: 16px;
-        background-color: rgba(0, 152, 198, 0.3);
-        backdrop-filter: blur(10px);
-        -webkit-backdrop-filter: blur(10px);
-        opacity: 0;
-        transform: translateY(-100%);
-        transition: all 0.5s ease;
     }
 
     .header-nav-img {
         padding: 12px;
     }
 
-    #menu-check:checked+#header-ul {
+    /* menu-checkにチェックが入ったらメニューを表示する */
+    #menu-check:checked+nav {
         opacity: 1;
         transform: translateY(0);
     }
@@ -434,9 +424,11 @@
         height: 52px;
     }
 
-    #top-img {
-        height: calc(100vh - 52px);
-        background-position: left 30% bottom 0;
+    #top-background-img {
+        width: 100%;
+        height: calc(100vh - 80px);
+        object-fit: cover;
+        object-position: 30% 0;
     }
 
     #title-img {
@@ -447,7 +439,7 @@
         display: block;
         position: absolute;
         top: 160px;
-        right: 32px;
+        right: 16px;
     }
 
     #top-info-inner-div {

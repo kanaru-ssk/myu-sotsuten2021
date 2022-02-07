@@ -16,14 +16,13 @@ body {
 
 header {
     position: fixed;
-    
     width: 100vw;
     height: 80px;
-    
     background-color: #5EB9D7;
-
     z-index: 2;
 }
+
+
 
 main {
     margin: 0 auto;
@@ -72,6 +71,19 @@ footer {
 
     header {
         height: 52px;
+    }
+
+    nav {
+        /* position: fixed; */
+        top: 0;
+        width: 100%;
+        padding: 16px;
+        background-color: rgba(0, 152, 198, 0.3);
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+        opacity: 0;
+        transform: translateY(-100%);
+        transition: all 0.5s ease;
     }
 
     main {
