@@ -137,6 +137,8 @@
 }
 /* ----------- / modal -----------*/
 
+
+
 /* ----------- outline -----------*/
 #outline-name {
     font-size: 20px;
@@ -456,6 +458,16 @@
     
     #modal-window {
         padding: 32px 16px;
+    }
+
+    .h1-img {
+        height: 24px;
+    }
+
+    .section-title-ja {
+        font-size: 12px;
+        font-weight: 500;
+        transform: translateY(0);
     }
 
     #research-link {
