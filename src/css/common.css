@@ -1,6 +1,6 @@
 html {
     scroll-behavior: smooth;
-    scroll-padding-top: 118px;
+    scroll-padding-top: 88px;
 }
 
 body {
@@ -66,6 +66,10 @@ footer {
 
 /* 750px以下に適用されるCSS（スマホ用） */
 @media screen and (max-width: 750px) {
+
+    html {
+        scroll-padding-top: 58px;
+    }
 
     header {
         height: 52px;
