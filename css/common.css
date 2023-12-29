@@ -1,94 +1,93 @@
 html {
-    scroll-behavior: smooth;
-    scroll-padding-top: 88px;
+  scroll-behavior: smooth;
+  scroll-padding-top: 88px;
 }
 
 body {
-    margin: 0;
-    background-color: #E8F5F9;
-    font-size: 14px;
-    font-family: "Hiragino Sans", sans-serif;
-    font-weight: 300;
-    line-height: 2.0;
-    letter-spacing: 1.4;
-    color: #185466;
+  margin: 0;
+  background-color: #e8f5f9;
+  font-size: 14px;
+  font-family: "Hiragino Sans", sans-serif;
+  font-weight: 300;
+  line-height: 2;
+  letter-spacing: 1.4;
+  color: #185466;
 }
 
 header {
-    position: fixed;
-    width: 100vw;
-    height: 80px;
-    background-color: #5EB9D7;
-    z-index: 2;
+  position: fixed;
+  width: 100vw;
+  height: 80px;
+  background-color: #5eb9d7;
+  z-index: 2;
 }
 
 main {
-    margin: 0 auto;
-    padding: 0 80px;
-    max-width: 800px;
+  margin: 0 auto;
+  padding: 0 80px;
+  max-width: 800px;
 }
 
 section {
-    margin: 96px 0;
+  margin: 96px 0;
 }
 
 h2 {
-    font-size: 24px;
-    font-weight: 400;
+  font-size: 24px;
+  font-weight: 400;
 }
 
 h3 {
-    font-size: 14px;
-    font-weight: 600;
-    margin-block-end: 0;
+  font-size: 14px;
+  font-weight: 600;
+  margin-block-end: 0;
 }
 
 span {
-    display: inline-block;
-    margin-right: 1em;
+  display: inline-block;
+  margin-right: 1em;
 }
 
 ul {
-    list-style-type: none;
-    margin-block-start: 0;
-    margin-block-end: 0;
-    padding: 0;
+  list-style-type: none;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  padding: 0;
 }
 
 footer {
-    width: 100vw;
-    height: 256px;
-    color: #fff;
-    background-color: #0098C6;
-    text-align: center;
-    z-index: 1;
+  width: 100vw;
+  height: 256px;
+  color: #fff;
+  background-color: #0098c6;
+  text-align: center;
+  z-index: 1;
 }
 
 /* 750px以下に適用されるCSS（スマホ用） */
 @media screen and (max-width: 750px) {
+  html {
+    scroll-padding-top: 58px;
+  }
 
-    html {
-        scroll-padding-top: 58px;
-    }
+  header {
+    height: 52px;
+  }
 
-    header {
-        height: 52px;
-    }
+  nav {
+    /* position: fixed; */
+    top: 0;
+    width: 100%;
+    padding: 16px;
+    background-color: rgba(0, 152, 198, 0.3);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    opacity: 0;
+    transform: translateY(-100%);
+    transition: all 0.5s ease;
+  }
 
-    nav {
-        /* position: fixed; */
-        top: 0;
-        width: 100%;
-        padding: 16px;
-        background-color: rgba(0, 152, 198, 0.3);
-        backdrop-filter: blur(10px);
-        -webkit-backdrop-filter: blur(10px);
-        opacity: 0;
-        transform: translateY(-100%);
-        transition: all 0.5s ease;
-    }
-
-    main {
-        padding: 0 16px;
-    }
+  main {
+    padding: 0 16px;
+  }
 }

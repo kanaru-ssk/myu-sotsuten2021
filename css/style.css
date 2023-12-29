@@ -11,466 +11,461 @@
 
 /* ----------- header -----------*/
 #header-ul {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    width: 100%;
-    height: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
+  height: 100%;
 }
 
 .header-nav-img {
-    padding: 32px;
+  padding: 32px;
 }
 
 #menu-check {
-    display: none
+  display: none;
 }
 
 #menu-button {
-    display: none;
+  display: none;
 }
 /* ----------- / header -----------*/
 
 /* ----------- top -----------*/
 
 #header-space {
-    height: 80px;
+  height: 80px;
 }
 
 #top-background-img {
-    width: 100%;
-    min-height: calc(100vh - 80px);
-    object-fit: cover;
-    object-position: 50% 0;
+  width: 100%;
+  min-height: calc(100vh - 80px);
+  object-fit: cover;
+  object-position: 50% 0;
 }
 
 #title-img {
-    position: absolute;
-    top: 100px;
-    right: 0;
-    max-width: 750px;
-    width: 90%;
-    padding: 32px;
-    box-sizing: border-box;
-    background-color: rgba(94, 185, 215, 0.5);
+  position: absolute;
+  top: 100px;
+  right: 0;
+  max-width: 750px;
+  width: 90%;
+  padding: 32px;
+  box-sizing: border-box;
+  background-color: rgba(94, 185, 215, 0.5);
 }
 
 #top-info-outer-div {
-    width: 100%;
-    height: 216px;
-    background: linear-gradient(#0098C6, #E8F5F9);
-    overflow:hidden;
-    transform: translateY(-1px);
+  width: 100%;
+  height: 216px;
+  background: linear-gradient(#0098c6, #e8f5f9);
+  overflow: hidden;
+  transform: translateY(-1px);
 }
 
 #top-info-inner-div {
-    height: 42px;
-    margin: 76px auto;
-    padding: 0 80px;
-    max-width: 800px;
-    background-clip: content-box;
-    background-color: #fff;
-    overflow:hidden;
-    cursor: pointer;
+  height: 42px;
+  margin: 76px auto;
+  padding: 0 80px;
+  max-width: 800px;
+  background-clip: content-box;
+  background-color: #fff;
+  overflow: hidden;
+  cursor: pointer;
 }
 
 #top-info-text-div {
-    max-width: 360px;
-    height: 16px;
-    line-height: 16px;
-    text-align: center;
-    margin: 13px auto;
-    border-bottom: #185466 1px solid;
+  max-width: 360px;
+  height: 16px;
+  line-height: 16px;
+  text-align: center;
+  margin: 13px auto;
+  border-bottom: #185466 1px solid;
 }
 
 .section-title-ja {
-    color: #EA574E;
-    font-size: 12px;
-    font-weight: 500;
-    transform: translateY(-10px);
+  color: #ea574e;
+  font-size: 12px;
+  font-weight: 500;
+  transform: translateY(-10px);
 }
 
 /* ----------- / top -----------*/
 
 /* ----------- modal -----------*/
 #modal {
-    display: none;
-    position: fixed;
-    z-index: 3;
-    left: 0;
-    top: 0;
-    width: 100vw;
-    height: 100vh;
-    background-color: rgba(0,0,0,0.5);
-    padding: 80px;
-    box-sizing: border-box;
+  display: none;
+  position: fixed;
+  z-index: 3;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 80px;
+  box-sizing: border-box;
 }
 
 #modal-window {
-    max-width: 800px;
-    height: calc(100vh - 224px);
-    background-color: #fff;
-    margin: 0 auto;
-    padding: 32px 64px;
+  max-width: 800px;
+  height: calc(100vh - 224px);
+  background-color: #fff;
+  margin: 0 auto;
+  padding: 32px 64px;
 }
 
 #modal-contents {
-    overflow: auto;
-    height: calc(100% - 64px);
-    overscroll-behavior: contain;
+  overflow: auto;
+  height: calc(100% - 64px);
+  overscroll-behavior: contain;
 }
 
 #modal-close-div {
-    height: 64px;
-    text-align: center;
-
+  height: 64px;
+  text-align: center;
 }
 
 #modal-close-button {
-    width: 128px;
-    height: 32px;
-    margin-top: 32px;
-    padding: 0;
-    background: none;
-    color: #185466;
-    border-color: #185466;
-    cursor: pointer;
+  width: 128px;
+  height: 32px;
+  margin-top: 32px;
+  padding: 0;
+  background: none;
+  color: #185466;
+  border-color: #185466;
+  cursor: pointer;
 }
 /* ----------- / modal -----------*/
 
-
-
 /* ----------- outline -----------*/
 #outline-name {
-    font-size: 20px;
-    font-weight: 500;
-    line-height: 1.6;
-    margin-bottom: 24px;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.6;
+  margin-bottom: 24px;
 }
 /* ----------- / outline -----------*/
 
 /* ----------- greeting -----------*/
 #greeting-teacher-div {
-    display: flex;
-    justify-content: flex-end;
+  display: flex;
+  justify-content: flex-end;
 }
 
 #greeting-img {
-    width: 120px;
-    height: 120px;
+  width: 120px;
+  height: 120px;
 }
 
 #greeting-teacher-name {
-    height: 120px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-    padding-right: 16px;
+  height: 120px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  padding-right: 16px;
 }
 
 .other-span {
-    margin: 0;
+  margin: 0;
 }
 /* ----------- / greeting -----------*/
 
 /* ----------- contents -----------*/
 #research-link-div {
-    text-align: center;
+  text-align: center;
 }
 
 #research-link {
-    display: inline-block;
-    color: #fff;
-    font-size: 20px;
-    font-weight: 600;
-    line-height: 58px;
-    text-decoration: none;
-    background-color: #0098C6;
-    padding: 0 20px;
-    margin-top: 40px;
-    border-radius: 39px;
+  display: inline-block;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 58px;
+  text-decoration: none;
+  background-color: #0098c6;
+  padding: 0 20px;
+  margin-top: 40px;
+  border-radius: 39px;
 }
 /* ----------- / contents -----------*/
 
 /* ----------- event -----------*/
 #lecturer-profile-ul {
-    display: flex;
-    gap: 40px;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: flex-start;
-    align-content: flex-start;
+  display: flex;
+  gap: 40px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  align-content: flex-start;
 }
 
 .lecturer-profile-li {
-    width: 348px;
-    min-height: 484px;
-    padding: 12px;
-    border: 4px #F19185 solid;
-    background-color: #fff;
-    display: grid
+  width: 348px;
+  min-height: 484px;
+  padding: 12px;
+  border: 4px #f19185 solid;
+  background-color: #fff;
+  display: grid;
 }
 
 .lecturer-profile-img {
-    width: 120px;
-    height: 120px;
-    float: right
+  width: 120px;
+  height: 120px;
+  float: right;
 }
 
-.lecturer-profile-text{
-    font-size: 12px;
-    display: block;
+.lecturer-profile-text {
+  font-size: 12px;
+  display: block;
 }
 
 .lecturer-profile-name {
-    font-size: 20px;
-    font-weight: 700;
+  font-size: 20px;
+  font-weight: 700;
 }
 /* ----------- / event -----------*/
 
 /* ----------- access -----------*/
 #map {
-    height: 80vh;
+  height: 80vh;
 }
 /* ----------- / access -----------*/
 
 /* ----------- footer -----------*/
 #footer-contact-div {
-    padding-top: 48px;
+  padding-top: 48px;
 }
 
 #portal-link-div {
-    text-align: center;
+  text-align: center;
 }
 
 #portal-link {
-    display: inline-block;
-    color: #0098C6;
-    font-size: 16px;
-    line-height: 48px;
-    font-weight: 400;
-    text-decoration: none;
-    background-color: #fff;
-    padding: 0 20px;
-    margin: 16px;
-    border-radius: 39px;
+  display: inline-block;
+  color: #0098c6;
+  font-size: 16px;
+  line-height: 48px;
+  font-weight: 400;
+  text-decoration: none;
+  background-color: #fff;
+  padding: 0 20px;
+  margin: 16px;
+  border-radius: 39px;
 }
 /* ----------- / footer -----------*/
 
 /* ----------- loading-animation -----------*/
 #loading {
-    z-index: 5;
-    position: fixed;
-    top: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100vw;
-    height: 100vh;
-    pointer-events: none;
-    background-color: rgba(255, 255, 255, 0);
-    -webkit-animation: blurAnim 3s ease 3s;
-    animation: blurAnim 6s ease 0s;
+  z-index: 5;
+  position: fixed;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  pointer-events: none;
+  background-color: rgba(255, 255, 255, 0);
+  -webkit-animation: blurAnim 3s ease 3s;
+  animation: blurAnim 6s ease 0s;
 }
-@keyframes blurAnim{
-    0% {
-        background-color: rgba(255, 255, 255, 1);
-        backdrop-filter: blur(10px);
-        -webkit-backdrop-filter: blur(10px);
-    }
-    50% {
-        background-color: rgba(255, 255, 255, 1);
-        backdrop-filter: blur(10px);
-        -webkit-backdrop-filter: blur(10px);
-    }
-    100% {
-        background-color: rgba(255, 255, 255, 0);
-        backdrop-filter: blur(0px);
-        -webkit-backdrop-filter: blur(0px);
-    }
+@keyframes blurAnim {
+  0% {
+    background-color: rgba(255, 255, 255, 1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+  }
+  50% {
+    background-color: rgba(255, 255, 255, 1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+  }
+  100% {
+    background-color: rgba(255, 255, 255, 0);
+    backdrop-filter: blur(0px);
+    -webkit-backdrop-filter: blur(0px);
+  }
 }
 
 #load-box {
-    width: 30%;
-    height: 100px;
-    margin: 0 auto;
-    text-align: center;
+  width: 30%;
+  height: 100px;
+  margin: 0 auto;
+  text-align: center;
 }
 
 #load-svg {
-    opacity: 0;
-    animation: fadeOut 6s ease 0s;
+  opacity: 0;
+  animation: fadeOut 6s ease 0s;
 }
 
-@keyframes fadeOut{
-    0% {
-        opacity: 1;
-    }
-    50% {
-        opacity: 1;
-    }
-    100% {
-        opacity: 0;
-    }
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
 }
 
 #load-bar {
-    border-style: none none solid;
-    border-color: #00A3D6;
-    border-width: 5px;
-    opacity: 0;
-    -webkit-animation: loadingAnim 6s ease 0s;
-    animation: loadingAnim 6s ease 0s;
-    transform-origin: 0% 0%;
+  border-style: none none solid;
+  border-color: #00a3d6;
+  border-width: 5px;
+  opacity: 0;
+  -webkit-animation: loadingAnim 6s ease 0s;
+  animation: loadingAnim 6s ease 0s;
+  transform-origin: 0% 0%;
 }
-@keyframes loadingAnim{
-    0% {
-        transform: scaleX(0);
-        opacity: 1;
-    }
-    50% {
-        transform: scaleX(1);
-        opacity: 1;
-    }
-    100% {
-        opacity: 0;
-    }
+@keyframes loadingAnim {
+  0% {
+    transform: scaleX(0);
+    opacity: 1;
+  }
+  50% {
+    transform: scaleX(1);
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
 }
 
 #man-foot-1 {
-    transform-origin: 40% 40%;
-    animation: walkAnim-1 2s linear infinite 0s;
+  transform-origin: 40% 40%;
+  animation: walkAnim-1 2s linear infinite 0s;
 }
 
-@keyframes walkAnim-1{
-    0% {
-        transform: rotate(-15deg);
-    }
-    50% {
-        transform: rotate(18deg);
-    }
-    100% {
-        transform: rotate(-15deg);
-    }
+@keyframes walkAnim-1 {
+  0% {
+    transform: rotate(-15deg);
+  }
+  50% {
+    transform: rotate(18deg);
+  }
+  100% {
+    transform: rotate(-15deg);
+  }
 }
 
 #man-foot-2 {
-    transform-origin: 40% 40%;
-    animation: walkAnim-2 2s linear infinite 0s;
+  transform-origin: 40% 40%;
+  animation: walkAnim-2 2s linear infinite 0s;
 }
 
-@keyframes walkAnim-2{
-    0% {
-        transform: rotate(18deg);
-    }
-    50% {
-        transform: rotate(-15deg);
-    }
-    100% {
-        transform: rotate(18deg);
-    }
+@keyframes walkAnim-2 {
+  0% {
+    transform: rotate(18deg);
+  }
+  50% {
+    transform: rotate(-15deg);
+  }
+  100% {
+    transform: rotate(18deg);
+  }
 }
 
 #man-body {
-    transform-origin: 0% 100%;
-    animation: walkAnim-body 2s linear infinite 0s;
+  transform-origin: 0% 100%;
+  animation: walkAnim-body 2s linear infinite 0s;
 }
 
-@keyframes walkAnim-body{
-    0% {
-        transform: scaleY(1);
-    }
-    25% {
-        transform: scaleY(1.05);
-    }
-    50% {
-        transform: scaleY(1);
-    }
-    75% {
-        transform: scaleY(1.05);
-    }
-    100% {
-        transform: scaleY(1);
-    }
+@keyframes walkAnim-body {
+  0% {
+    transform: scaleY(1);
+  }
+  25% {
+    transform: scaleY(1.05);
+  }
+  50% {
+    transform: scaleY(1);
+  }
+  75% {
+    transform: scaleY(1.05);
+  }
+  100% {
+    transform: scaleY(1);
+  }
 }
 
 /* ----------- / loading-animation -----------*/
 
-
 /* 750px以下に適用されるCSS（スマホ用） */
 @media screen and (max-width: 750px) {
-    #header-ul {
-        flex-direction: column;
-        height: auto;
-    }
+  #header-ul {
+    flex-direction: column;
+    height: auto;
+  }
 
-    .header-nav-img {
-        padding: 12px;
-    }
+  .header-nav-img {
+    padding: 12px;
+  }
 
-    /* menu-checkにチェックが入ったらメニューを表示する */
-    #menu-check:checked+nav {
-        opacity: 1;
-        transform: translateY(0);
-    }
+  /* menu-checkにチェックが入ったらメニューを表示する */
+  #menu-check:checked + nav {
+    opacity: 1;
+    transform: translateY(0);
+  }
 
-    #menu-button {
-        display: block;
-        padding: 14px;
-        float: right;
-        z-index: 4;
-    }
+  #menu-button {
+    display: block;
+    padding: 14px;
+    float: right;
+    z-index: 4;
+  }
 
-    #header-space {
-        height: 52px;
-    }
+  #header-space {
+    height: 52px;
+  }
 
-    #top-background-img {
-        width: 100%;
-        height: calc(100vh - 52px);
-        object-fit: cover;
-        object-position: 33% 0;
-    }
+  #top-background-img {
+    width: 100%;
+    height: calc(100vh - 52px);
+    object-fit: cover;
+    object-position: 33% 0;
+  }
 
-    #title-img {
-        padding: 16px;
-    }
+  #title-img {
+    padding: 16px;
+  }
 
-    #top-info-inner-div {
-        padding: 0 16px;
-    }
-    
-    #top-info-text-div {
-        max-width: 320px;
-    }
+  #top-info-inner-div {
+    padding: 0 16px;
+  }
 
-    #modal {
-        padding: 16px;
-    }
-    
-    #modal-window {
-        padding: 32px 16px;
-    }
+  #top-info-text-div {
+    max-width: 320px;
+  }
 
-    .h1-img {
-        height: 24px;
-    }
+  #modal {
+    padding: 16px;
+  }
 
-    .section-title-ja {
-        font-size: 12px;
-        font-weight: 500;
-        transform: translateY(0);
-    }
+  #modal-window {
+    padding: 32px 16px;
+  }
 
-    #research-link {
-        font-size: 16px;
-        line-height: 36px;
-    }
+  .h1-img {
+    height: 24px;
+  }
 
-    #lecturer-profile-ul {
-        justify-content: space-around;
-    }
+  .section-title-ja {
+    font-size: 12px;
+    font-weight: 500;
+    transform: translateY(0);
+  }
 
+  #research-link {
+    font-size: 16px;
+    line-height: 36px;
+  }
+
+  #lecturer-profile-ul {
+    justify-content: space-around;
+  }
 }
