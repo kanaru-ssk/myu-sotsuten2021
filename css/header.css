@@ -51,8 +51,8 @@ header {
   transition: 500ms;
   transform: translateY(-50%) scaleY(0);
   pointer-events: none;
-  padding: 0 20px 20px;
   background-color: #5eb9d7cc;
+  padding: 0 0 20px;
 }
 
 #header-checkbox:checked ~ .header-nav {
@@ -62,20 +62,20 @@ header {
 
 .header-ul {
   list-style: none;
-  display: flex;
-  align-items: flex-end;
-  flex-direction: column;
   margin: 0;
   padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.header-li {
+  margin: 8px 20px;
 }
 
 .header-link {
-  display: block;
   font-size: 16px;
   color: #fff;
   text-decoration: none;
-  padding: 4px 0;
-  margin: 4px 0;
 }
 
 .header-link:hover {
@@ -92,20 +92,17 @@ header {
   }
 
   .header-nav {
-    padding: 20px;
     pointer-events: auto;
     transform: none;
     background-color: unset;
+    padding: 0 20px 0 0;
+    height: 100%;
   }
 
   .header-ul {
-    align-items: flex-center;
-    justify-content: end;
+    align-items: center;
     flex-direction: row;
-  }
-
-  .header-link {
-    padding: 4px 8px;
-    margin: 0 20px;
+    justify-content: end;
+    height: 100%;
   }
 }
